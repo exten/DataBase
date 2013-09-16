@@ -5,7 +5,7 @@ import java.util.Random;
 import org.hibernate.CustomEntityDirtinessStrategy;
 
 import zero.hibernate.entity.Customes;
-//exten 
+//exten 2009
 public class CharCode
 {
 	public static void main(String[] args)
