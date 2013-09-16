@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="zero.hibernate.entity.Customes" table="Customes"
+		lazy="false">
+		<id name="uu_id">
+			<generator class="uuid.hex"></generator>
+		</id>
+
+		<property name="name"></property>
+		<property name="phone"></property>
+		<property name="adds"></property>
+		<property name="age"></property>
+		<property name="brathDate"></property>
+<!-- 
+		<set name="orders" cascade="all" inverse="true" lazy="false">
+			<key column="uu_id"></key>
+			<one-to-many class="zero.hibernate.entity.Orders"></one-to-many>
+		</set>
+ -->
+	</class>
+</hibernate-mapping>
