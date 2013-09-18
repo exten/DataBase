@@ -13,14 +13,14 @@ public class CharCode
 		CharCode charCose = new CharCode();
 		
 //		charCose.Mor();
-//		charCose.BinaryToHex();
-		charCose.BinaryToTen();
+		charCose.BinaryToHex();
+//		charCose.BinaryToTen();
 	}
 
 	private void BinaryToHex()
 	{
 		System.out.println("  BinaryToHex >>> ");
-		char chr = 'ä¸';
+		char chr = 'Ò»';
 		System.out.println(0xf + " >>> " + (int)chr);
 		System.out.println(Integer.toBinaryString(0xf) + " >>> " + Integer.toBinaryString((int)chr));
 		

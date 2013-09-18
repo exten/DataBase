@@ -61,9 +61,9 @@ public class Customes extends BaseEntity
 		return brathDate;
 	}
 
-	public void setBrathDate(Date brathDate)
+	public void setBrathDate(Date string)
 	{
-		this.brathDate = brathDate;
+		this.brathDate = string;
 	}
 
 	public Set<Orders> getSet()
