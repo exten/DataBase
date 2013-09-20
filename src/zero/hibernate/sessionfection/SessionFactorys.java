@@ -11,7 +11,6 @@ public class SessionFactorys
 
 	private SessionFactorys()
 	{
-		// TODO Auto-generated constructor stub
 	}
 
 	public static class BuliderSessionFactor
@@ -22,6 +21,7 @@ public class SessionFactorys
 			
 			if (sFactory == null)
 			{
+				System.out.println("Static SessionFactory sFactory == null");
 				//获得配置文件
 				Configuration cfg = new Configuration().configure();
 				//服务注册
@@ -35,6 +35,7 @@ public class SessionFactorys
 		
 		public static SessionFactory getSessionFactory()
 		{
+			System.out.println("Static SessionFactory getSessionFactory()");
 			return sFactory;
 		}
 	}

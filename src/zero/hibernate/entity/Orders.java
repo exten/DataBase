@@ -18,84 +18,70 @@ public class Orders extends BaseEntity
 	private Customes customes;
 	private Set<Items> items;
 	private String info;
-	
-	public String getStatus()
+	public double getQty()
 	{
-		return status;
+		return qty;
 	}
-
-	public void setStatus(String status)
+	public void setQty(double qty)
 	{
-		this.status = status;
+		this.qty = qty;
 	}
-
-	public Date getModefiyDate()
-	{
-		return modefiyDate;
-	}
-
-	public void setModefiyDate(Date modefiyDate)
-	{
-		this.modefiyDate = modefiyDate;
-	}
-
 	public double getPrice()
 	{
 		return price;
 	}
-	
 	public void setPrice(double price)
 	{
 		this.price = price;
+	}
+	public Date getCreateDate()
+	{
+		return createDate;
+	}
+	public void setCreateDate(Date createDate)
+	{
+		this.createDate = createDate;
+	}
+	public String getStatus()
+	{
+		return status;
+	}
+	public void setStatus(String status)
+	{
+		this.status = status;
+	}
+	public Date getModefiyDate()
+	{
+		return modefiyDate;
+	}
+	public void setModefiyDate(Date modefiyDate)
+	{
+		this.modefiyDate = modefiyDate;
+	}
+	public Customes getCustomes()
+	{
+		return customes;
+	}
+	public void setCustomes(Customes customes)
+	{
+		this.customes = customes;
 	}
 	public Set<Items> getItems()
 	{
 		return items;
 	}
-
 	public void setItems(Set<Items> items)
 	{
 		this.items = items;
 	}
-
 	public String getInfo()
 	{
 		return info;
 	}
-
 	public void setInfo(String info)
 	{
 		this.info = info;
 	}
-
-	public double getQty()
-	{
-		return qty;
-	}
-
-	public void setQty(double qty)
-	{
-		this.qty = qty;
-	}
-
-	public Date getCreateDate()
-	{
-		return createDate;
-	}
-
-	public void setCreateDate(Date createDate)
-	{
-		this.createDate = createDate;
-	}
-
-	public Customes getCustomes()
-	{
-		return customes;
-	}
-
-	public void setCustomes(Customes customes)
-	{
-		this.customes = customes;
-	}
-
+	
+	
 }

@@ -6,7 +6,7 @@
 	<class name="zero.hibernate.entity.Customes" table="Customes"
 		lazy="false">
 		<id name="uu_id">
-			<generator class="uuid.hex"></generator>
+			<generator class="uuid"></generator>
 		</id>
 
 		<property name="name"></property>

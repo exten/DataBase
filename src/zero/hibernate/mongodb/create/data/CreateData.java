@@ -36,7 +36,6 @@ public class CreateData
 			customes.setAge(r.nextInt(100));
 			customes.setBrathDate(new java.sql.Date(new Date().getTime()));
 			customes.setFlow_no(r.nextLong()*1L);
-			customes.setNmae(String.valueOf((char)(r.nextInt(1000)*10)));
 			customes.setPhone("+86-168"+String.valueOf((char)(r.nextInt(1000)*10))+String.valueOf((char)(r.nextInt(1000)*10)));
 		}
 		tx.commit();

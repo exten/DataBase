@@ -5,7 +5,7 @@
 <hibernate-mapping>
 	<class name="zero.hibernate.entity.Orders" table="Orders" lazy="false">
 		<id name="uu_id">
-			<generator class="uuid.hex"></generator>
+			<generator class="uuid"></generator>
 		</id>
 		<property name="qty"></property>
 		<property name="price"></property>

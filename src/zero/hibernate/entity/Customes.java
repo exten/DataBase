@@ -15,64 +15,56 @@ public class Customes extends BaseEntity
 	private int age;
 	private Date brathDate;
 	private Set<Orders> orders;
-
-	public int getAge()
-	{
-		return age;
-	}
-
-	public void setAge(int age)
-	{
-		this.age = age;
-	}
-
-	public String getNmae()
+	
+	public String getName()
 	{
 		return name;
 	}
-
-	public void setNmae(String name)
+	public void setName(String name)
 	{
 		this.name = name;
 	}
-
 	public String getPhone()
 	{
 		return phone;
 	}
-
 	public void setPhone(String phone)
 	{
 		this.phone = phone;
 	}
-
 	public String getAdds()
 	{
 		return adds;
 	}
-
 	public void setAdds(String adds)
 	{
 		this.adds = adds;
 	}
-
+	public int getAge()
+	{
+		return age;
+	}
+	public void setAge(int age)
+	{
+		this.age = age;
+	}
 	public Date getBrathDate()
 	{
 		return brathDate;
 	}
-
-	public void setBrathDate(Date string)
+	public void setBrathDate(Date brathDate)
 	{
-		this.brathDate = string;
+		this.brathDate = brathDate;
 	}
-
-	public Set<Orders> getSet()
+	public Set<Orders> getOrders()
 	{
 		return orders;
 	}
-
-	public void setSet(Set<Orders> set)
+	public void setOrders(Set<Orders> orders)
 	{
-		this.orders = set;
+		this.orders = orders;
 	}
+
+
+	
 }

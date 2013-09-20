@@ -10,16 +10,17 @@ public class BaseEntity implements Serializable
 	private static final long serialVersionUID = 1L;
 	private String uu_id;
 	
-	public String getUuid()
+	public String getUu_id()
 	{
 		return uu_id;
 	}
 
-	public void setUuid(String uuid)
+	public void setUu_id(String uu_id)
 	{
-		this.uu_id = uuid;
+		this.uu_id = uu_id;
 	}
 
+	
 	public long getFlow_no()
 	{
 		return flow_no;
