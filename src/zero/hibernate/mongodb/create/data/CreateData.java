@@ -7,7 +7,7 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import zero.hibernate.entity.Customes;
-import zero.hibernate.sessionfection.SessionFactorys;
+import zero.hibernate.sessionfactory.SessionFactorys;
 
 public class CreateData
 {

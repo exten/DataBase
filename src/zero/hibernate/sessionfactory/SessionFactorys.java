@@ -1,4 +1,4 @@
-package zero.hibernate.sessionfection;
+package zero.hibernate.sessionfactory;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;

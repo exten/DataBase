@@ -18,7 +18,7 @@ import org.hibernate.Transaction;
 import zero.hibernate.entity.Customes;
 import zero.hibernate.entity.Items;
 import zero.hibernate.entity.Orders;
-import zero.hibernate.sessionfection.SessionFactorys;
+import zero.hibernate.sessionfactory.SessionFactorys;
 
 public class CreateData
 {
