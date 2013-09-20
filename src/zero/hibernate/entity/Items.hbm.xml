@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<class name="zero.hibernate.entity.Items" table="Items" lazy="false">
+	<class name="zero.hibernate.entity.Items" table="Items" lazy="false" >
 		
 		<id name="code">
 			<generator class="identity"></generator>

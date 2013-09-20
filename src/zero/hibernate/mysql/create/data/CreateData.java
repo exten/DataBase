@@ -30,7 +30,7 @@ public class CreateData
 		
 		
 //		createData.createCustome(sFactory);
-//		createData.createItems(sFactory);
+		createData.createItems(sFactory);
 		createData.createOrders(sFactory);
 	}
 
@@ -67,7 +67,7 @@ public class CreateData
 		
 		Random r = new Random();
 		
-		Customes customes = this.getCustomes();
+		Customes customes = null;//this.getCustomes();
 		Set<Items> set = new HashSet<Items>();
 		set = this.getItemsHavID(sFactory);
 		
@@ -87,7 +87,7 @@ public class CreateData
 				session.save(customes);
 			}
 			orders.setCustomes(customes);
-//			orders.setItems(set);
+			orders.setItems(set);
 			orders.setInfo(UUID.randomUUID().toString());
 			orders.setPrice(r.nextDouble());
 			orders.setQty(r.nextDouble());
@@ -107,10 +107,10 @@ public class CreateData
 		Random r = new Random();
 		Session session = sFactory.openSession();
 		Transaction tx = session.beginTransaction();
-		for (int i = 0; i < 500; i++)
+		for (int i = 0; i < 50; i++)
 		{
-				Items items = new Items();
-				items = this.getItems();
+//				Items items = null;//new Items();
+				Items items = this.getItems();
 				session.save(items);
 		}
 		tx.commit();

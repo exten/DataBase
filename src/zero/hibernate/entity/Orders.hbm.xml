@@ -13,10 +13,10 @@
 		<property name="status"></property>
 		<property name="modefiyDate"></property>
 		<property name="info"></property>
-<!-- -->
-		<set name="items" cascade="all" inverse="true" lazy="false" table="order_item">
+	<!-- -->
+		<set name="items" cascade="save-update" inverse="false" lazy="false" table="order_item">
 			<key column="code"></key>
-			<many-to-many class="zero.hibernate.entity.Items"></many-to-many>
+			<many-to-many class="zero.hibernate.entity.Items" column="order_id"></many-to-many>
 		</set>
 
 		<many-to-one name="customes" class="zero.hibernate.entity.Customes"
